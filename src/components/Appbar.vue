@@ -2,16 +2,30 @@
   <div>
     <v-toolbar flat app>
       <div class="d-flex align-center">
-        <v-img
-          src="../assets/logo.jpg"
-          class="shrink mr-2"
-          contain
-          width="50"
-          @click.native="$router.push('/')"
-        />
+        <v-avatar>
+          <v-img
+            src="../assets/logo.jpg"
+            class="mr-2"
+            contain
+            @click.native="$router.push('/')"
+          />
+        </v-avatar>
       </div>
-      <v-btn flat @click.native="$router.push('about')">About</v-btn>
-      <v-btn flat @click.native="$router.push('categories')">Categories</v-btn>
+      <v-btn
+        class="mr-2" 
+        flat
+        color="white" 
+        elevation="0" 
+        @click.native="$router.push('categories')">
+        Categories
+      </v-btn>
+      <v-btn 
+        color="white" 
+        flat
+        elevation="0" 
+        @click.native="$router.push('about')">
+        About
+      </v-btn>
     </v-toolbar>
     <v-divider></v-divider>
   </div>

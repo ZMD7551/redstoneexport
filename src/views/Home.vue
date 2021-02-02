@@ -4,8 +4,19 @@
     rerum, autem sunt neque nemo voluptatibus ex necessitatibus corporis tempora
     expedita fugiat, commodi quibusdam laboriosam sint. Blanditiis dicta facere
     quidem. -->
-  <div class="align-center">
-    <v-img src="../assets/logo.jpg" height="50%" width="100%" />
-  </div>
+   <div class="align-center">
+    <v-container>
+        <v-layout>
+            <v-flex>
+                  <v-img 
+                  src="../assets/logo.jpg"
+                  contain
+                  height="500"
+                  overflow-y-auto 
+                  />
+            </v-flex>
+        </v-layout>
+    </v-container>
+   </div>
   <!-- </v-card> -->
 </template>
